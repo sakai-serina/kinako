@@ -1,5 +1,4 @@
 <template lang="pug">
-  .hello
     h2 {{ knk }}
 </template>
 
