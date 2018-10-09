@@ -1,6 +1,6 @@
 <template lang="pug">
   #app
-    Usagi(knk="KINAKO")
+    Usagi(knk="KAWAII is KINAKO")
 </template>
 
 <script>
