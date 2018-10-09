@@ -1,12 +1,26 @@
 <template lang="pug">
-    h2 {{ knk }}
+  .content(:class="borderClass")
+    p うさぎ世界一番付
+    slot(name="knk")
+    slot(name="serina")
 </template>
 
 <script>
 export default {
   name: "Usagi",
   props: {
-    knk: String
+    knk: String,
+    isActiveBorder: Boolean,
+    color: String,
+  },
+  computed: { //関数を定義
+    borderClass() {
+      return {
+        border : this.isActiveBorder,
+        red: this.color === 'red',
+        blue: this.color === 'blue',
+      }
+    }
   }
 };
 </script>
@@ -26,5 +40,15 @@ li {
 }
 a {
   color: #42b983;
+}
+.border {
+  margin-top: 0px;
+  border: solid 1px;
+}
+.red {
+  color: pink;
+}
+.blue {
+  color: blue;
 }
 </style>

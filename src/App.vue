@@ -1,7 +1,11 @@
 <template lang="pug">
   #app
-    Usagi(knk)
-    Usagi(knk)
+    Usagi(isActiveBorder="true" color="blue")
+      template(slot="knk")
+        p きなこかわいい一番かわいいうさぎ
+    Usagi(color="red")
+      template(slot="serina")
+        p せりなはきなこの飼い主
 </template>
 
 <script>
@@ -22,6 +26,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #333;
+}
+.header{
   margin-top: 0px;
   border: solid 1px;
 }
