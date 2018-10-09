@@ -6,7 +6,7 @@
 export default {
   name: "Usagi",
   props: {
-    knk: String
+    knk: "KAWAII is KINAKO"
   }
 };
 </script>
