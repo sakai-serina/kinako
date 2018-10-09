@@ -1,7 +1,7 @@
 <template lang="pug">
   #app
     Usagi(knk)
-    p(Usagi(knk)はきなこの写真がたくさん)
+    Usagi(knk)
 </template>
 
 <script>
